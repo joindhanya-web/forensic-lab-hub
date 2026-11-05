@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Forensic Lab Hub | Explore the Science of Evidence</title>
+<style>
+:root{--navy:#101b35;--blue:#5d7cff;--pale:#eef2ff;--ink:#172033;--muted:#65708a;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#f8f9fd;line-height:1.6}
+header{background:var(--navy);color:white;padding:18px 7%;display:flex;justify-content:space-between;align-items:center;gap:16px;position:sticky;top:0;z-index:5}
+.logo{font-weight:800;letter-spacing:.5px}.logo span{color:#9fb2ff}nav{display:flex;gap:22px;flex-wrap:wrap}nav a{color:#e7ebff;text-decoration:none;font-size:14px}nav a:hover{color:#9fb2ff}
+.hero{padding:86px 7% 78px;background:linear-gradient(125deg,#101b35 0%,#1b2e59 62%,#334d91 100%);color:white}
+.tag{display:inline-block;border:1px solid #7186c5;border-radius:30px;padding:6px 13px;color:#dce4ff;font-size:12px;letter-spacing:1px;text-transform:uppercase}
+.hero h1{font-size:clamp(38px,6vw,66px);line-height:1.08;max-width:760px;margin:22px 0 16px}.hero h1 span{color:#9fb2ff}.hero p{max-width:620px;color:#d5dcf4;font-size:17px}
+.button{display:inline-block;margin-top:18px;background:#8198ff;color:#101b35;text-decoration:none;font-weight:700;padding:12px 20px;border-radius:8px}.button:hover{background:white}
+section{padding:64px 7%}.section-label{color:#526bd0;text-transform:uppercase;letter-spacing:1.8px;font-size:12px;font-weight:800}.section-title{font-size:clamp(27px,4vw,38px);margin:8px 0 12px;color:var(--navy)}.intro{color:var(--muted);max-width:700px;margin:0 0 28px}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.card{background:white;border:1px solid #e6e9f2;border-radius:14px;padding:23px;box-shadow:0 8px 24px #1b2e5909}.icon{font-size:28px}.card h3{margin:10px 0 6px;color:var(--navy)}.card p{color:var(--muted);font-size:14px;margin:0}
+.case-area{background:var(--pale)}.case{background:white;border-radius:14px;padding:24px;border-left:4px solid var(--blue);margin:14px 0}.case h3{margin:0 0 5px}.case p{margin:0;color:var(--muted)}
+.quiz-box{max-width:720px;background:white;border:1px solid #e6e9f2;border-radius:16px;padding:26px;box-shadow:0 10px 30px #1b2e590b}.quiz-box h3{margin-top:0}.answers{display:grid;gap:10px}.answers button{padding:12px 14px;text-align:left;border:1px solid #dce2f2;border-radius:9px;background:#f9faff;cursor:pointer;font-size:15px}.answers button:hover{border-color:var(--blue);background:#eef2ff}#feedback{font-weight:700;margin-bottom:0;min-height:26px}
+footer{background:var(--navy);color:#d5dcf4;padding:30px 7%;text-align:center;font-size:13px}
+@media(max-width:760px){header{align-items:flex-start;flex-direction:column}nav{gap:12px}.grid{grid-template-columns:1fr}.hero{padding-top:62px}section{padding:48px 7%}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">FORENSIC <span>LAB HUB</span></div>
+  <nav><a href="#about">About</a><a href="#disciplines">Disciplines</a><a href="#cases">Case studies</a><a href="#quiz">Quiz</a></nav>
+</header>
+<main>
+  <section class="hero">
+    <span class="tag">Explore • Examine • Understand</span>
+    <h1>Every trace tells a <span>story.</span></h1>
+    <p>Discover how science helps investigators examine evidence, reconstruct events and move closer to the truth. A beginner-friendly introduction to the world of forensic science.</p>
+    <a class="button" href="#disciplines">Explore forensic science ↓</a>
+  </section>
+  <section id="about">
+    <div class="section-label">The science behind evidence</div>
+    <h2 class="section-title">What is forensic science?</h2>
+    <p class="intro">Forensic science applies scientific methods to questions related to law and investigations. It helps examine physical and biological evidence objectively so that findings can support an investigation or a court of law.</p>
+  </section>
+  <section id="disciplines">
+    <div class="section-label">Explore the fields</div>
+    <h2 class="section-title">Major forensic disciplines</h2>
+    <p class="intro">Different types of evidence require different scientific methods. Here are six important areas.</p>
+    <div class="grid">
+      <article class="card"><div class="icon">🖐️</div><h3>Fingerprint Examination</h3><p>Studies friction ridge patterns to compare and evaluate impressions found at a scene.</p></article>
+      <article class="card"><div class="icon">🧬</div><h3>Forensic Biology & DNA</h3><p>Examines biological materials such as blood, saliva and hair using scientific techniques.</p></article>
+      <article class="card"><div class="icon">🔬</div><h3>Forensic Chemistry</h3><p>Analyses unknown substances, residues and materials to understand their composition.</p></article>
+      <article class="card"><div class="icon">📄</div><h3>Questioned Documents</h3><p>Examines handwriting, signatures, inks, paper and possible alterations in documents.</p></article>
+      <article class="card"><div class="icon">⚖️</div><h3>Forensic Toxicology</h3><p>Detects and interprets drugs, alcohol and toxic substances in biological samples.</p></article>
+      <article class="card"><div class="icon">📷</div><h3>Crime Scene Investigation</h3><p>Focuses on documenting, collecting, preserving and packaging evidence carefully.</p></article>
+    </div>
+  </section>
+  <section class="case-area" id="cases">
+    <div class="section-label">Learn through examples</div>
+    <h2 class="section-title">Evidence in action</h2>
+    <p class="intro">These fictional learning examples show how forensic disciplines can contribute to an investigation.</p>
+    <div class="case"><h3>Case file 01 — The glass fragment</h3><p>A broken window is found at a scene. Investigators document the fragments and a laboratory may compare their physical and chemical properties with a questioned sample.</p></div>
+    <div class="case"><h3>Case file 02 — The anonymous note</h3><p>A note is recovered during an inquiry. A document examiner may study handwriting characteristics, writing materials and signs of alteration.</p></div>
+    <div class="case"><h3>Case file 03 — The unknown stain</h3><p>A reddish stain is located and collected using proper procedures. Laboratory screening and confirmatory tests can help determine its nature.</p></div>
+  </section>
+  <section id="quiz">
+    <div class="section-label">Test your knowledge</div>
+    <h2 class="section-title">Quick forensic quiz</h2>
+    <p class="intro">Choose the best answer. You can try again as many times as you like.</p>
+    <div class="quiz-box">
+      <h3 id="question">Which branch examines handwriting and questioned signatures?</h3>
+      <div class="answers" id="answers">
+        <button onclick="checkAnswer(0)">Forensic Toxicology</button>
+        <button onclick="checkAnswer(1)">Questioned Document Examination</button>
+        <button onclick="checkAnswer(2)">Forensic Biology</button>
+      </div>
+      <p id="feedback" aria-live="polite"></p>
+      <button class="button" onclick="nextQuestion()">Next question →</button>
+    </div>
+  </section>
+</main>
+<footer>FORENSIC LAB HUB · A student learning project · Explore the science of evidence</footer>
+<script>
+const quiz=[
+ {q:"Which branch examines handwriting and questioned signatures?",a:["Forensic Toxicology","Questioned Document Examination","Forensic Biology"],correct:1,why:"Correct! Questioned document examination studies handwriting, signatures and document features."},
+ {q:"Which type of evidence can contain DNA?",a:["Saliva","A shoe size chart","A location map"],correct:0,why:"Correct! Saliva can contain cells that may provide DNA."},
+ {q:"What should investigators do first when documenting a scene?",a:["Move all objects","Photograph and record observations","Clean the area"],correct:1,why:"Correct! Careful documentation helps preserve the original condition of the scene."}
+];
+let current=0,answered=false;
+function render(){answered=false;document.getElementById("question").textContent=quiz[current].q;document.getElementById("feedback").textContent="";document.getElementById("answers").innerHTML=quiz[current].a.map((x,i)=>`<button onclick="checkAnswer(${i})">${x}</button>`).join("")}
+function checkAnswer(i){if(answered)return;answered=true;document.getElementById("feedback").textContent=i===quiz[current].correct?quiz[current].why:"Not quite. Try the next question or have another look at the options.";document.querySelectorAll("#answers button").forEach((b,n)=>b.disabled=true)}
+function nextQuestion(){current=(current+1)%quiz.length;render()}
+</script>
+</body>
+</html>
