@@ -3,7 +3,7 @@ const express = require("express");
 const cors = require("cors");
 const helmet = require("helmet");
 const path = require("path");
-const { disciplines, cases, questions } = require("./data/content");
+const { disciplines, cases, questions } = require("./contents");
 
 const app = express();
 const PORT = Number(process.env.PORT) || 3000;
